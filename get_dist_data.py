@@ -92,7 +92,7 @@ df = pd.read_csv('halogas_data.txt',  delimiter='\t', header=0, nrows=1000)
 d_ghosts = df.iloc[:, 3]
 
 # CALIFA
-df = pd.read_csv('CALIFA_dist.csv',  delimiter='\t', header=0, nrows=1000)
+df = pd.read_csv('califa_dist.csv',  delimiter='\t', header=0, nrows=1000)
 d_califa = df.iloc[:, -1]
 # %%
 # create dataframe
@@ -105,7 +105,7 @@ data = [d_things, d_11h, d_her, d_angst, d_s4g, d_pings, d_mhon, d_ghosts,
 
 df_p = pd.DataFrame(np.transpose(data), columns=headers)
 
-print(df_p)
+print(data)
 # %%
 # Create a dictionary with your data
 data_dict = {
